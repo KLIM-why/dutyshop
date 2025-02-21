@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DutyShOp/clothing store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DutyShOp</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#products">Товари</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Ласкаво просимо до Duty ShOp!</h2>
+        <p>Модний одяг за доступними цінами.</p>
+        <button onclick="scrollToProducts()">Дивитися товари</button>
+    </section>
+
+    <section id="products">
+        <h2>Наші товари</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/images/imeges3.jpg" alt="Худі">
+                <h3>Худі Denim tears</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('Худі Denim tears');">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/images.jpg" alt="Джинси">
+                <h3>PALACE X EVISU DENIM JEAN STONE WASH</h3>
+                <p>₴5000</p>
+                <button onclick="addToCart('PALACE X EVISU DENIM JEAN STONE WASH')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges8.webp" alt="Hoodie">
+                <h3>Nike x NOCTA Tech Fleece Hoodie</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('Nike x NOCTA Tech Fleece Hoodie')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges5.jpg" alt="Худі">
+                <h3>Худі Supreme Stone Island Hooded Sweatshirt</h3>
+                <p>₴3000</p>
+                <button onclick="addToCart('Худі Supreme Stone Island Hooded Sweatshirt')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imegs6.webp" alt="Худі">
+                <h3>Худі Supreme Stone Island</h3>
+                <p>₴2800</p>
+                <button onclick="addToCart('Худі Supreme Stone Island')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges2.jpg" alt="Кроосівки">
+                <h3> Кроосівки adidas by Raf Simons Ozweego 3 Burgundy</h3>
+                <p>₴4500</p>
+                <button onclick="addToCart('Кроосівки adidas by Raf Simons Ozweego 3 Burgundy')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges4.jpg" alt=" Пуховик">
+                <h3> Пуховик Palace c.p. company puff down jacket</h3>
+                <p>₴8000</p>
+                <button onclick="addToCart('Пуховик Palace c.p. company puff down jacket')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges1.jpg" alt="Jacket">
+                <h3>Supreme Lafayette Reflective Down Jacket</h3>
+                <p>₴6000</p>
+                <button onclick="addToCart(' Lafayette Reflective Down Jacket<')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges7.jpg" alt="Кросівки">
+                <h3> Кросівки Nike Air Max 95 Comme des Garcons Black</h3>
+                <p>₴5000</p>
+
+                <button onclick="addToCart('Кросівки Nike Air Max 95 Comme des Garcons Black')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges9.jpeg" alt="Кросівки">
+                <h3>Nike Skepta x Air Max Tailwind</h3>
+                <p>₴1488</p>
+                <button onclick="addToCart('Nike Skepta x Air Max Tailwind')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges10.webp" alt="Kросівки">
+                <h3>A Bathing ape Road Sta M1</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('A Bathing ape Road Sta M1')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges11.webp" alt="Худі">
+                <h3>Play CDG Double Heart Zip Hoodie</h3>
+                <p>₴3200</p>
+                <button onclick="addToCart('Play CDG Double Heart Zip Hoodie')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges12.jpg" alt="Куртка">
+                <h3>Corteiz bolo lite jacket</h3>
+                <p>₴6400</p>
+                <button onclick="addToCart('Corteiz bolo lite jacket')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges13.jpg" alt="Сфітшот">
+                <h3>Palace Pro Team 02 Crew Neck Sweatshirt</h3>
+                <p>₴3100</p>
+                <button onclick="addToCart('Palace Pro Team 02 Crew Neck Sweatshirt')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges14.webp" alt="Світер">
+                <h3>Supreme Snow White Sweater</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('Supreme Snow White Sweater')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges15.jpg" alt="Худі">
+                <h3>Essentials hoodie</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('Essentials hoodie')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges16.jpg" alt="Черевики">
+                <h3>Timberland boots</h3>
+                <p>₴3500</p>
+                <button onclick="addToCart('Timberland boots')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges17.jpg" alt="Куртка">
+                <h3>Supreme x Thrasher Hooded Work Jacket</h3>
+                <p>₴4600</p>
+                <button onclick="addToCart('Supreme x Thrasher Hooded Work Jacket')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges18.jpg" alt="Світер">
+                <h3>Supreme Blured Logo Sweater</h3>
+                <p>₴3400</p>
+                <button onclick="addToCart('Supreme Blured Logo Sweater')">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="/images/imeges19.webp" alt="Куртка">
+                <h3>Supreme x Air Jordan Puffer Jacket</h3>
+                <p>₴7000</p>
+                <button onclick="addToCart('Supreme x Air Jordan Puffer Jacket')">Додати в кошик</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Зв'яжіться з нами</h2>
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="" required>
+            <input type="email" placeholder="" required>
+            <textarea placeholder="" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Duty ShOp</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <section id="cart">
+        <h2>Ваш кошик</h2>
+        <div id="cart-items"></div>
+        <div id="total-price">Загальна сума: ₴0</div>
+        <button id="buy-button" onclick="buyItems()">Купити</button>
+    </section>            
+</body>
+
+</html>
